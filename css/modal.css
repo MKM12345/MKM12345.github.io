@@ -1,0 +1,19 @@
+
+/* this is default bootstrap for .modal-xl */
+/* @media (min-width: 1200px) {
+  .modal-xl {
+    max-width: 1140px; } } */
+
+
+.modal-xl {
+  max-width: 80%; 
+  margin: auto;
+  padding-top: 1rem;
+} 
+
+.modal-footer,
+.modal-header  {
+  border: none;
+}
+
+

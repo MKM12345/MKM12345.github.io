@@ -1,0 +1,25 @@
+/* Default item color */
+.navbar-dark .navbar-nav .nav-link {
+  /*color: red;*/
+  /*color: #32334a;*/
+  color: #007bff;
+}
+
+/* The hover color for navbar item */
+.navbar-dark .navbar-nav .nav-link:focus, 
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:active {
+  /*color: #475297;*/
+  color: #798aeb;
+  /*color: #ccc !important;*/
+}
+
+/* The active item color  */
+.navbar-dark .navbar-nav .active>.nav-link, 
+.navbar-dark .navbar-nav .nav-link.active, 
+.navbar-dark .navbar-nav .nav-link.show, 
+.navbar-dark .navbar-nav .show>.nav-link {
+  /*color: #714cdf;*/
+  color: #ffffff;
+}
+

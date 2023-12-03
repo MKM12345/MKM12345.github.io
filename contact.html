@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>MKM12345</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    
+    <!-- Neon glow theme CSS -->
+    <link rel="stylesheet" href="css/bootstrap4-neon-glow.min.css">
+    <!-- My CSS -->
+    <link rel="stylesheet" href="css/baki.css">
+    <link rel="stylesheet" href="css/neon-btn.css"> 
+    <link rel="stylesheet" href="css/colors.css"> 
+    <link rel="stylesheet" href="css/card.css"> 
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/font-hack/2.020/css/hack.min.css'>
+    
+  </head>
+  <body>
+    <div class="footer-contact-fix">
+      <nav id="navigation" class="navbar fixed-top navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">
+          <div class="container-fluid navbar-container">
+            <img class="logo" src="images/logo.png" alt="navbar-logo">
+          </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+          data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+       
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav mr-auto">
+            <!-- Home -->
+            <li class="nav-item mx-4">
+              <a class="nav-link" href="index.html">
+                <i class="fas fa-home mr-1"></i>Home
+              </a>
+            </li>
+            <!-- Projects -->
+            <li class="nav-item mx-4">
+              <a class="nav-link" href="index2.html">
+                <i class="fas fa-cogs mr-1"></i>Projects
+              </a>
+            </li>
+            <!-- Contact -->
+            <li class=" active glow nav-item mx-4">
+              <a class="nav-link" href="contact.html">
+                <i class="fas fa-mobile-alt mr-1"></i>Contact
+              </a>
+            </li>
+          </ul>
+  
+          <ul class="nav navbar-nav ml-auto">
+            <!-- <li class="divider"></li> -->       
+            <li class="nav-item mx-4">
+              <a target="_blank" href="https://www.github.com/MKM12345" class="nav-link">
+                <i class="fab fa-lg fa-github mr-1"></i>
+                <!-- <span class="d-inline d-inline d-sm-inline d-md-inline d-lg-none">Github</span> -->
+              </a>
+            </li>                   
+          </ul>     
+        </div>
+      </nav>
+
+      <header class="header container">
+        <!-- background video -->
+        <div class="bg-video">
+          <video class="bg-video content" autoplay muted loop>
+              <source src="images/background.mp4" type="video/mp4">
+              <!-- <source src="images/space-odyssey.webm" type="video/webm"> -->
+              Your browser is not suported!
+          </video>
+        </div>
+
+        
+        <div class="row text-center">
+          <div class="col-lg-6 mx-auto">
+            <form name="contact" method="POST" data-netlify="true" onsubmit="return handleFormSubmission()">
+              <!-- Name -->
+              <div class="form-group">
+                <input type="text" 
+                      class="form-control text-center" 
+                      id="name" 
+                      placeholder="Name" 
+                      name="name">
+              </div>
+              <!-- Email -->
+              <div class="form-group">
+                  <input type="email" 
+                        class="form-control text-center" 
+                        id="email" 
+                        placeholder="Email" 
+                        name="email">
+              </div>
+              <!-- Message -->
+              <div class="form-group">
+                <textarea class="form-control text-center" 
+                          id="message" 
+                          placeholder="Your message" 
+                          rows="3" 
+                          name="message"></textarea>
+              </div>
+              <!-- FIle upload -->
+              <div class="form-group">
+                <!-- <input class="form-control-file" 
+                        type="file"
+                        id="file-upload" 
+                        placeholder="Upload File" 
+                        name="file-upload"> -->
+                        <label class="btn btn-dark" for="my-file-selector">
+                          <input id="my-file-selector" type="file" style="display:none" 
+                          onchange="$('#upload-file-info').html(this.files[0].name)">
+                          <i class="fas fa-upload"></i>
+                          Upload file
+                      </label>
+                      <span class='label label-info' id="upload-file-info"></span>
+              </div>
+
+              <button type="submit" class="btn btn-info btn-wide">Send</button>
+            </form>
+          </div>
+        </div>    
+      </header>
+    </div>
+
+    <footer class="footer container-fluid text-center">
+      <div class="row">
+        <div class="col-md-4 col-sm-12 my-auto pb-1">             
+          <div class="row">
+            <!-- github -->
+            <div class="col-4">
+              <a href="https://www.github.com/MKM12345" target="_blank" class="btn btn-outline-info btn-shadow">
+                <i class="fab fa-lg fa-github"></i>
+              </a>
+            </div>                     
+          </div>           
+        </div>
+        <div class="col-1"></div>
+        <div class="col-md-2 col-sm-12 p-1 d-none d-md-block">
+          <img class="logo" src="images/logo.png" alt="footer-logo">
+        </div>
+        <div class="col-md-5 col-sm-12 my-auto">
+          <ul class="text-info my-auto">
+            <li><i class="fas fa-envelope mr-1"></i>arekhon.shadow@gmail.com</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+  <!-- My JS -->
+  <script src="app.js"></script>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  </body>
+</html>

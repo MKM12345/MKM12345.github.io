@@ -1,0 +1,99 @@
+/*************************
+ These styles applies to all cards
+***************************/
+.card {
+    border: none;
+    transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    margin: 1.2rem auto;
+    max-width: 20rem;
+    height: 30rem;
+    background-image: linear-gradient(to right bottom, #0f0f0f, #414142e6);
+}
+
+.card:hover {
+    transform: translateY(-5px) scale(1.0) rotateX(0); 
+    color: #fff;
+}
+
+.card-img-top {
+    -webkit-clip-path: polygon(0 0, 100% 0,100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0,100% 85%, 0 100%);
+    opacity: 0.5;    
+}
+
+.card-body {
+    height: 16rem;
+}
+
+.card-text {
+    list-style: none; 
+    height: 7.5rem;
+}
+
+.card-text li:not(:last-child){
+    border-bottom:1px solid #66696b;
+}  
+
+
+/*************************
+        card-1
+***************************/
+.card-1 {
+    color: #2983fe;
+}
+
+.card-1:hover {
+background-image: linear-gradient(to right bottom, rgba(41, 131, 254, .6), rgba(41, 131, 254, .3));
+box-shadow: 0 0px 16px 5px #2983fe;
+}
+
+/*************************
+        card-2
+***************************/
+.card-2 {
+    color: #17b06b;
+}
+
+.card-2:hover {
+background-image: linear-gradient(to right bottom, rgba(23, 176, 107, .6), rgba(23, 176, 107, .3));
+box-shadow: 0 0px 16px 5px rgb(23, 176, 107);
+}
+
+/*************************
+        card-3
+***************************/
+.card-3 {
+    color: rgb(249, 117, 21);
+}
+
+.card-3:hover {
+background-image: linear-gradient(to right bottom, rgba(249, 117, 21, .6), rgba(249, 117, 21, .3));
+box-shadow: 0 0px 16px 5px rgb(249, 117, 21);
+}
+
+/*************************
+        card-4
+***************************/
+.card-4 {
+    color: rgb(113, 76, 223);
+}
+
+.card-4:hover {
+background-image: linear-gradient(to right bottom, rgba(113, 76, 223, .6), rgba(113, 76, 223, .3));
+box-shadow: 0 0px 16px 5px rgb(113, 76, 223);
+}
+img {
+	height: 210px;
+}
+.rounded-box {
+  background-color: #ffd700; /* Golden color */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 400px; /* Adjust the width as needed */
+  margin: 0 auto; /* Center the box horizontally */
+  color: purple;
+}
