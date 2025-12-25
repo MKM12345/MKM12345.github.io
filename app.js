@@ -13,7 +13,7 @@ for (var i = 0; i < btns.length; i++) {
   });
 }
 // Add typing effect
-const words = ['Web developer', 'game coder', 'app maker', 'Pro-grammer'];
+const words = ['Web developer', 'Game architect', 'App builder', 'Software creator'];
         let wordIndex = 0;
         const wordElement = document.querySelector('.mb-3.text-info');
 
